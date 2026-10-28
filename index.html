@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - PolyLingo</title>
+    <style>
+        :root {
+            --primary: #5c45fd;
+            --primary-dark: #432ec7;
+            --primary-light: #eeedfe;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --border: #e2e8f0;
+            --accent: #0ea5e9;
+            --success: #10b981;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 32px 16px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 16px;
+            box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #432ec7 0%, #5c45fd 50%, #7c3aed 100%);
+            color: #ffffff;
+            padding: 48px 36px 40px;
+            text-align: left;
+        }
+
+        .header .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            margin-bottom: 12px;
+            backdrop-filter: blur(4px);
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            font-size: 15px;
+            color: #e0e7ff;
+            margin-top: 4px;
+        }
+
+        .content {
+            padding: 40px 36px;
+        }
+
+        .summary-card {
+            background: var(--primary-light);
+            border: 1px solid rgba(92, 69, 253, 0.2);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 32px;
+        }
+
+        .summary-card h3 {
+            color: var(--primary-dark);
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .summary-card p {
+            font-size: 14px;
+            color: #334155;
+            margin: 0;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            background: #f1f5f9;
+            padding: 16px 20px;
+            border-radius: 12px;
+            margin-bottom: 36px;
+            font-size: 14px;
+        }
+
+        .meta-grid div strong {
+            display: block;
+            color: var(--text-muted);
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+        }
+
+        .meta-grid div span {
+            color: var(--text-main);
+            font-weight: 600;
+            word-break: break-all;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-top: 36px;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #334155;
+            margin-bottom: 16px;
+        }
+
+        ul, ol {
+            margin: 0 0 18px 24px;
+            color: #334155;
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: #faf5ff;
+            border-left: 4px solid #a855f7;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+            font-size: 14.5px;
+            color: #4a044e;
+        }
+
+        .permission-badge {
+            display: inline-block;
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        th, td {
+            padding: 12px 14px;
+            text-align: left;
+            border: 1px solid var(--border);
+        }
+
+        th {
+            background-color: #f8fafc;
+            color: #334155;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #fbfcfe;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: #f8fafc;
+            border-top: 1px solid var(--border);
+            padding: 24px 36px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .contact-card {
+            background: #f8fafc;
+            border: 1px dashed #cbd5e1;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 12px 8px;
+            }
+            .header {
+                padding: 32px 20px;
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .content {
+                padding: 24px 20px;
+            }
+            .meta-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header -->
+    <header class="header">
+        <span class="badge">Official Privacy Policy</span>
+        <h1>PolyLingo Privacy Policy</h1>
+        <p>Comprehensive disclosure for Google Play Store compliance</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+        <!-- Quick Summary Box -->
+        <div class="summary-card">
+            <h3>Privacy Summary</h3>
+            <p>
+                <strong>PolyLingo</strong> is committed to protecting your privacy. We do not sell your personal data. 
+                We collect only the minimum information necessary to deliver interactive language learning, streak tracking, 
+                and pronunciation assistance. Sensitive permissions like the microphone are strictly used for speech exercises 
+                in real time and are never recorded or stored without your explicit authorization.
+            </p>
+        </div>
+
+        <!-- Metadata Grid -->
+        <div class="meta-grid">
+            <div>
+                <strong>Application Name</strong>
+                <span>PolyLingo</span>
+            </div>
+            <div>
+                <strong>Package / Application ID</strong>
+                <span>com.aistudio.polylingo.app</span>
+            </div>
+            <div>
+                <strong>Effective Date</strong>
+                <span>October 28, 2026</span>
+            </div>
+            <div>
+                <strong>Developer Contact</strong>
+                <span><a href="mailto:zeeshankhan19933@gmail.com">zeeshankhan19933@gmail.com</a></span>
+            </div>
+        </div>
+
+        <!-- Section 1 -->
+        <h2>1. Introduction & Overview</h2>
+        <p>
+            This Privacy Policy governs your use of the mobile application <strong>PolyLingo</strong> ("the App", "we", "our", or "us"), 
+            developed and published by Zeeshan Khan. The App is a comprehensive language-learning platform designed to help users learn 
+            vocabulary, master grammar, practice pronunciation, take quizzes, and track learning progress across multiple languages.
+        </p>
+        <p>
+            By downloading, installing, or using PolyLingo, you agree to the collection and use of information in accordance with this policy. 
+            If you do not agree with any part of this policy, please do not use the application.
+        </p>
+
+        <!-- Section 2 -->
+        <h2>2. Information We Collect and Process</h2>
+        <p>We collect and handle the following categories of data to provide a seamless learning experience:</p>
+
+        <h3>A. Learning Progress and App Preferences (Locally Stored)</h3>
+        <ul>
+            <li><strong>Curriculum Progress:</strong> Completed lessons, unit milestones, unlocked levels, quiz scores, and accuracy rates.</li>
+            <li><strong>Gamification Data:</strong> Daily learning streaks, earned experience points (XP), daily goal targets, and completion timestamps.</li>
+            <li><strong>User Customizations:</strong> Target language selection, current proficiency level (Pre-A1 to C2), bookmarked vocabulary, and favorite flashcards.</li>
+            <li><strong>App Preferences:</strong> Audio playback preferences, dark/light theme choices, and reminder settings.</li>
+        </ul>
+        <p><em>Note: This information is stored securely on your local device (via modern Android DataStore and local database systems) and remains under your direct control.</em></p>
+
+        <h3>B. Audio and Voice Data (Sensitive Permission)</h3>
+        <p>
+            PolyLingo includes interactive speaking practice, pronunciation guides, and conversation exercises.
+        </p>
+        <ul>
+            <li><strong>Permission Requested:</strong> <span class="permission-badge">RECORD_AUDIO</span> (Microphone Access).</li>
+            <li><strong>Purpose:</strong> Used exclusively in real-time when you tap the microphone button to evaluate your pronunciation of words and phrases.</li>
+            <li><strong>Zero Storage Guarantee:</strong> Your voice inputs are processed instantaneously for speech recognition scoring. <strong>We do not save, record, archive, sell, or profile your raw voice recordings.</strong> Voice audio is discarded immediately after the pronunciation score or transcription is produced.</li>
+        </ul>
+
+        <h3>C. Device and Diagnostics Information</h3>
+        <ul>
+            <li><strong>Technical Telemetry:</strong> Device model, operating system version (Android OS), screen resolution, app version code, and crash logs generated automatically by Android OS / Google Play Services to diagnose unexpected errors and optimize stability.</li>
+        </ul>
+
+        <!-- Section 3 -->
+        <h2>3. Device Permissions We Request</h2>
+        <p>PolyLingo requests only the minimal set of Android permissions strictly required for its core educational functions:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Permission</th>
+                    <th>Classification</th>
+                    <th>Reason &amp; Functional Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span class="permission-badge">RECORD_AUDIO</span></td>
+                    <td>Runtime / Dangerous</td>
+                    <td>Required only when using the interactive pronunciation practice tool to capture voice samples for instant pronunciation scoring.</td>
+                </tr>
+                <tr>
+                    <td><span class="permission-badge">INTERNET</span></td>
+                    <td>Install-time / Normal</td>
+                    <td>Allows the app to fetch online language modules, download pronunciation audio, and connect to AI language tutoring services securely over HTTPS.</td>
+                </tr>
+                <tr>
+                    <td><span class="permission-badge">ACCESS_NETWORK_STATE</span></td>
+                    <td>Install-time / Normal</td>
+                    <td>Monitors network connectivity to seamlessly adapt between offline study modes and online AI pronunciation features.</td>
+                </tr>
+                <tr>
+                    <td><span class="permission-badge">MODIFY_AUDIO_SETTINGS</span></td>
+                    <td>Install-time / Normal</td>
+                    <td>Adjusts audio volume and output routing for natural speech playback during listening exercises.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Section 4 -->
+        <h2>4. Artificial Intelligence & Cloud Processing</h2>
+        <p>
+            PolyLingo incorporates advanced AI capabilities powered by <strong>Google Gemini API / Firebase AI Logic</strong> 
+            to generate adaptive language explanations, contextual vocabulary dialogues, and dynamic practice questions.
+        </p>
+        <div class="highlight-box">
+            <strong>AI Data Safeguards:</strong>
+            <ul style="margin: 8px 0 0 18px;">
+                <li>Text prompts submitted for translation or grammar explanation are transmitted through encrypted HTTPS channels.</li>
+                <li>Your inputs are strictly utilized to respond to your educational queries in real time.</li>
+                <li>User data is <strong>never</strong> sold or shared with data brokers, nor is it used to build advertising profiles.</li>
+            </ul>
+        </div>
+
+        <!-- Section 5 -->
+        <h2>5. Third-Party Service Providers</h2>
+        <p>
+            To deliver certain app features, we rely on trusted industry-standard infrastructure providers that adhere to rigorous privacy standards:
+        </p>
+        <ul>
+            <li>
+                <strong>Google Play Services:</strong> Used for app distribution, updates, base security verification, and platform integrity.
+                (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>)
+            </li>
+            <li>
+                <strong>Google Gemini API / Google Cloud:</strong> Provides server-side intelligence for language translation, dialogue generation, and grammar guidance.
+                (<a href="https://cloud.google.com/terms/cloud-privacy-notice" target="_blank" rel="noopener noreferrer">Google Cloud Privacy Notice</a>)
+            </li>
+        </ul>
+        <p>These third-party providers have access to information solely to perform tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+
+        <!-- Section 6 -->
+        <h2>6. Data Storage, Security &amp; Retention</h2>
+        <p>
+            We implement comprehensive security measures designed to safeguard your data:
+        </p>
+        <ul>
+            <li><strong>Encryption in Transit:</strong> All data transmissions between the App and remote services use Transport Layer Security (TLS 1.2/1.3) with standard SSL/HTTPS certificates.</li>
+            <li><strong>Local Sandbox:</strong> On-device learning records are stored in private internal application storage, inaccessible to other apps installed on your device.</li>
+            <li><strong>Data Retention:</strong> Since learning metrics (XP, streak, lesson completion) are stored on your local device, they persist until you clear the app data or uninstall the application.</li>
+        </ul>
+
+        <!-- Section 7 -->
+        <h2>7. Data Deletion and User Control</h2>
+        <p>You have full autonomy over your data:</p>
+        <ol>
+            <li><strong>Clear Progress in App:</strong> You can reset your learning progress, vocabulary bookmarks, and study statistics at any time through the in-app Settings screen.</li>
+            <li><strong>Device Settings:</strong> You can permanently wipe all local application storage by going to <em>Android Settings &gt; Apps &gt; PolyLingo &gt; Storage &amp; Cache &gt; Clear Storage / Clear Data</em>.</li>
+            <li><strong>Permission Revocation:</strong> You can grant or revoke Microphone access at any time via <em>Android Settings &gt; Apps &gt; PolyLingo &gt; Permissions</em>.</li>
+            <li><strong>Deletion Requests:</strong> If you have any inquiries regarding data deletion or wish to verify that no residual data exists, you can email us directly at <a href="mailto:zeeshankhan19933@gmail.com">zeeshankhan19933@gmail.com</a>. We will process your request within 30 days.</li>
+        </ol>
+
+        <!-- Section 8 -->
+        <h2>8. Children's Privacy (COPPA Compliance)</h2>
+        <p>
+            PolyLingo is intended for general audiences interested in language acquisition. We do not knowingly collect personal identifiable information 
+            from children under the age of 13 (or under the applicable age of digital consent in your jurisdiction).
+        </p>
+        <p>
+            If you are a parent or guardian and believe that your child has provided us with personal data without your consent, please contact us 
+            immediately at <a href="mailto:zeeshankhan19933@gmail.com">zeeshankhan19933@gmail.com</a>. We will take prompt steps to verify and 
+            delete any such information from our records.
+        </p>
+
+        <!-- Section 9 -->
+        <h2>9. International Compliance (GDPR &amp; CCPA/CPRA)</h2>
+        <h3>For European Economic Area (EEA) &amp; UK Users (GDPR)</h3>
+        <p>Under the General Data Protection Regulation (GDPR), you possess rights including:</p>
+        <ul>
+            <li>The right to access personal data we hold about you.</li>
+            <li>The right to rectify inaccurate or incomplete data.</li>
+            <li>The right to erasure ("Right to be Forgotten").</li>
+            <li>The right to restrict or object to data processing.</li>
+            <li>The right to data portability.</li>
+        </ul>
+
+        <h3>For California Residents (CCPA / CPRA)</h3>
+        <p>Under the California Consumer Privacy Act, California residents have the right to:</p>
+        <ul>
+            <li>Know what categories of personal information are collected and how they are used.</li>
+            <li>Request the deletion of their personal information.</li>
+            <li>Opt-out of the "sale" or "sharing" of personal information. (<strong>PolyLingo does not sell personal information.</strong>)</li>
+            <li>Be free from discrimination for exercising their privacy rights.</li>
+        </ul>
+
+        <!-- Section 10 -->
+        <h2>10. Changes to This Privacy Policy</h2>
+        <p>
+            We may update our Privacy Policy periodically to reflect changes in our legal obligations, features, or operational practices. 
+            Any modifications will be posted directly on this page with an updated "Effective Date".
+        </p>
+        <p>
+            We encourage you to review this Privacy Policy periodically. Continued use of the App following any updates constitutes your acceptance of the revised terms.
+        </p>
+
+        <!-- Section 11 -->
+        <h2>11. Contact Information</h2>
+        <p>
+            If you have questions, feedback, or concerns regarding this Privacy Policy, your privacy rights, or data handling practices, please contact:
+        </p>
+
+        <div class="contact-card">
+            <p style="margin-bottom: 6px;"><strong>Developer / Publisher:</strong> Zeeshan Khan</p>
+            <p style="margin-bottom: 6px;"><strong>Application:</strong> PolyLingo (Android)</p>
+            <p style="margin-bottom: 6px;"><strong>Package ID:</strong> com.aistudio.polylingo.app</p>
+            <p style="margin-bottom: 0;"><strong>Direct Privacy Email:</strong> <a href="mailto:zeeshankhan19933@gmail.com">zeeshankhan19933@gmail.com</a></p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 PolyLingo. All rights reserved.</p>
+        <p style="margin-top: 4px;">This document complies with Google Play Developer Policy and International Privacy Standards.</p>
+    </footer>
+</div>
+
+</body>
+</html>
